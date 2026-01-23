@@ -1,1 +1,4 @@
 Project Scope: The purpose is to create a ride analytics database to track trips, ride fares, and demand surges. In addition, the database must include surge pricing detection measures and time-based performance optimization. The stakeholders involved include ride-sharing companies such as Uber and Lyft, as well as investors that have a share of these companies. Customers are also classified as steakholders as well. 
+
+https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city
+
