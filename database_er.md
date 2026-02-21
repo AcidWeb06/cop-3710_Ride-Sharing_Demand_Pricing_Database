@@ -32,7 +32,7 @@ Table Ride
   DROPOFF_LOCATION - Required 
   DIST_TRAVELED - Required 
   BASE_FARE - Required 
-  TRIP_DURATION - Single-valued
+  TRIP_DURATION - Required
   SUR_MULTIPLIER - Required
   TOTAL_FARE - Single-valued 
 
