@@ -1,4 +1,5 @@
-<img width="1230" height="1071" alt="CourseProject_PartB drawio (1)" src="https://github.com/user-attachments/assets/bc3ecc86-cebe-45ab-b1a5-80361d36323f" />
+
+<img width="1229" height="1131" alt="CourseProject_PartC drawio" src="https://github.com/user-attachments/assets/37a80558-fa71-439f-87f9-29ca7da2e068" />
 
 Table Driver
   DRIV_ID - Identifier
@@ -34,7 +35,6 @@ Table Ride
   BASE_FARE - Required 
   TRIP_DURATION - Required
   SUR_MULTIPLIER - Required
-  TOTAL_FARE - Single-valued 
 
 Table Payment
   PAY_ID - Identifer 
@@ -64,7 +64,8 @@ Table Special Event
   EVENT_ID - Identifier
   AREA_ID - Required 
   EVENT_NAME - Simple
-  EVENT_LOCATION - Composite 
+  EVENT_STREET - Simple
+  EVENT_ZIP - Simple
   EVENT_START - Single-valued
   EVENT_END - Single-valued 
 
