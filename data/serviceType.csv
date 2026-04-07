@@ -1,0 +1,12 @@
+SERVICE_TYPE_ID,SERVICE_NAME,BASE_RATE
+2.0,UberX,1.0
+3.0,Uber Black,2.0
+1.0,UberX Share ,0.75
+1.0,UberXL,1.6
+4.0,UberX Reserve,0.8
+5.0,,
+3.0,,
+2.0,,
+1.0,,
+4.0,,
+,,
