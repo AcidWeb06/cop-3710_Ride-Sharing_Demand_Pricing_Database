@@ -36,7 +36,7 @@ def feature_1_passengers_by_driver(db):
     print("\n--- Selected 1: Get All Passengers of a Specific Driver ---")
 
     try:
-        driver_id = int(input("Enter Driver ID: "))
+        driver_id = input("Enter Driver ID: ").strip()
         
         cursor = get_cursor(db)
         query = """
@@ -64,9 +64,6 @@ def feature_1_passengers_by_driver(db):
             print(f"{'='*70}")
             print(f"Total passengers found: {len(results)}\n")
 
-    except ValueError:
-        print("Invalid input. Please enter a numeric driver ID.")
-
     except Exception as err:
         print(f"Database error: {err}")
 
@@ -75,7 +72,7 @@ def feature_2_events_by_area(db):
     print("\n--- Selected 2: Get All Special Events in a Certain Area ---")
 
     try:
-        area_id = int(input("Enter Area ID: "))
+        area_id = input("Enter Area ID: ").strip()
         
         cursor = get_cursor(db)
         query = """
@@ -108,9 +105,6 @@ def feature_2_events_by_area(db):
             print(f"\n{'='*70}")
             print(f"Total events found: {len(results)}\n")
 
-    except ValueError:
-        print("Invalid input. Please enter a numeric area ID.")
-
     except Exception as err:
         print(f"Database error: {err}")
 
@@ -119,7 +113,7 @@ def feature_3_driver_earnings(db):
     print("\n--- Selected 3: Get Total Earnings of a Specific Driver ---")
 
     try:
-        driver_id = int(input("Enter Driver ID: "))
+        driver_id = input("Enter Driver ID: ").strip()
         
         cursor = get_cursor(db)
         query = """
@@ -151,9 +145,6 @@ def feature_3_driver_earnings(db):
             print(f"Average Earnings per Ride: ${row['TOTAL_EARNINGS']/row['TOTAL_RIDES']:.2f}")
             print(f"{'='*70}\n")
 
-    except ValueError:
-        print("Invalid input. Please enter a numeric driver ID.")
-
     except Exception as err:
         print(f"Database error: {err}")
 
@@ -163,9 +154,10 @@ def feature_4_pickups_by_day(db):
 
     try:
         date_str = input("Enter date (YYYY-MM-DD): ")
-        # Validate date format
-        datetime.strptime(date_str, "%Y-%m-%d")
-        
+        # Validate date format and convert to M/D/YYYY to match DB storage format
+        parsed_date = datetime.strptime(date_str, "%Y-%m-%d")
+        db_date_prefix = f"{parsed_date.month}/{parsed_date.day}/{parsed_date.year}%"
+
         cursor = get_cursor(db)
         query = """
         SELECT r.RIDE_ID, r.DRIV_ID, r.PASS_ID, r.REQUEST_TIME, 
@@ -176,10 +168,10 @@ def feature_4_pickups_by_day(db):
         FROM Ride r
         JOIN Driver d ON r.DRIV_ID = d.DRIV_ID
         JOIN Passenger p ON r.PASS_ID = p.PASS_ID
-        WHERE DATE(r.REQUEST_TIME) = ?
+        WHERE r.REQUEST_TIME LIKE ?
         ORDER BY r.REQUEST_TIME DESC
         """
-        cursor.execute(query, (date_str,))
+        cursor.execute(query, (db_date_prefix,))
         results = cursor.fetchall()
         cursor.close()
         
