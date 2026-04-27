@@ -14,6 +14,7 @@ https://www.weather.gov/okx/LocalClimatologicalData
 
 https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-data-trafficstat.page
 
+
 How to use this GitHub repository
 
 Step 1: Run create_db.sql to create the database
