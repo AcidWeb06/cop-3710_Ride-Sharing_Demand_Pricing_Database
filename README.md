@@ -15,6 +15,7 @@ https://www.weather.gov/okx/LocalClimatologicalData
 https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-data-trafficstat.page
 
 How to use this GitHub repository
+
 Step 1: Run create_db.sql to create the database
 
 Step 2: If the data being used to populate the database are all contained within a single csv file, run preprocess.py to seperate the data into their respective csv files, which will contain the data for each table in the database. If the data is seperated into their respective tables, move to Step 3
