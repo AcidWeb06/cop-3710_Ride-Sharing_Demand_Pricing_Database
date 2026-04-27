@@ -17,6 +17,9 @@ Step 4: Run the Python script app.py to access the database menu using the comma
 
 (Note: load_data_local.py and app.py both use SQLite3, so your OracleDB credentials are not required) 
 
+<img width="901" height="347" alt="App_Homepage" src="https://github.com/user-attachments/assets/fcda241e-1037-44d5-94bd-a201ce9f2311" />
+
+
 Databases Used:
 
 https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city
