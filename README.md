@@ -2,6 +2,7 @@ Summary: The purpose of this course project is to create a SQL-based database th
 
 The stakeholders involved include ride-sharing companies such as Uber and Lyft, specifically data scientists and management boards. Data scientists can use and analyze the database to determine when demand surges occur, and management boards can use the analytics from the database to improve the user interface of their apps. Ride-sharing drivers and customers are also classified as steakholders becuase drivers can use the database in order to optimize their trips and customers are the main users of ride-sharing companies such as Uber. 
 
+ER Diagram:
 <img width="1229" height="1131" alt="Final_CourseProject_ER_Diagram drawio" src="https://github.com/user-attachments/assets/ff1c585a-c90b-45a9-b692-ec603586630a" />
 
 
@@ -17,6 +18,7 @@ Step 4: Run the Python script app.py to access the database menu using the comma
 
 (Note: load_data_local.py and app.py both use SQLite3, so your OracleDB credentials are not required) 
 
+Homepage of app.py
 <img width="901" height="347" alt="App_Homepage" src="https://github.com/user-attachments/assets/fcda241e-1037-44d5-94bd-a201ce9f2311" />
 
 
