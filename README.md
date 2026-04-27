@@ -5,17 +5,6 @@ The stakeholders involved include ride-sharing companies such as Uber and Lyft, 
 <img width="1229" height="1131" alt="Final_CourseProject_ER_Diagram drawio" src="https://github.com/user-attachments/assets/ff1c585a-c90b-45a9-b692-ec603586630a" />
 
 
-https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city
-
-https://www.kaggle.com/datasets/yasserh/uber-fares-dataset
-
-https://www.kaggle.com/datasets/techabinesh/uber-dataset-for-eda
-
-https://www.weather.gov/okx/LocalClimatologicalData
-
-https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-data-trafficstat.page
-
-
 How to use this GitHub repository
 
 Step 1: Run create_db.sql to create the database
@@ -28,3 +17,14 @@ Step 4: Run the Python script app.py to access the database menu using the comma
 
 (Note: load_data_local.py and app.py both use SQLite3, so your OracleDB credentials are not required) 
 
+Databases Used:
+
+https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city
+
+https://www.kaggle.com/datasets/yasserh/uber-fares-dataset
+
+https://www.kaggle.com/datasets/techabinesh/uber-dataset-for-eda
+
+https://www.weather.gov/okx/LocalClimatologicalData
+
+https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-data-trafficstat.page
