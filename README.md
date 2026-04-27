@@ -4,6 +4,7 @@ The stakeholders involved include ride-sharing companies such as Uber and Lyft, 
 
 <img width="1229" height="1131" alt="Final_CourseProject_ER_Diagram drawio" src="https://github.com/user-attachments/assets/ff1c585a-c90b-45a9-b692-ec603586630a" />
 
+
 https://www.kaggle.com/datasets/fivethirtyeight/uber-pickups-in-new-york-city
 
 https://www.kaggle.com/datasets/yasserh/uber-fares-dataset
@@ -21,7 +22,7 @@ Step 1: Run create_db.sql to create the database
 
 Step 2: If the data being used to populate the database are all contained within a single csv file, run preprocess.py to seperate the data into their respective csv files, which will contain the data for each table in the database. If the data is seperated into their respective tables, move to Step 3
 
-Step 3: Run the Python script load_data_local.py to load the data into the database using the command: python load_data_local.py
+Step 3: Run the Python script load_data_local.py to load the data into the database using the command: python load_data_local.py. The data will be loaded into local_ridesharing.db
 
 Step 4: Run the Python script app.py to access the database menu using the command: python -m streamlit run app.py
 
